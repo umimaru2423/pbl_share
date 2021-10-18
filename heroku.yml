@@ -1,5 +1,5 @@
 build:
   docker:
-    web: pbl_share/Dockerfile
+    web: flaskApp_dir/Dockerfile
 run:
   web: bundle exec puma -C config/puma.rb
