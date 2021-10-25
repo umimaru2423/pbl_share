@@ -6,8 +6,8 @@ import os
 
 app = Flask(__name__)
 
-@app.route(/)
-def ridirect():
+@app.route("/")
+def redirect():
     return redirect("/calc")
 
 @app.route("/calc", methods=["POST", "GET"])
