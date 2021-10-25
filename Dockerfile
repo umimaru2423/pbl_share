@@ -22,5 +22,4 @@ RUN pip install flask flask-sqlalchemy
 # app.run(host='0.0.0.0', port=5000, debug=True)
 # みたいにコード内でやってもよい
 # （その場合は変更したコードを GitHub に push しておく必要あり）
-ENV FLASK_APP app.py
-CMD ["flask", "run", "--host", "0.0.0.0", "--port", "5000"]
+CMD ["python","app.py"]
