@@ -15,7 +15,7 @@ RUN git clone https://github.com/umimaru2423/pbl_share.git myapp
 WORKDIR myapp
 
 # 必要なライブラリのインストール
-RUN pip install flask flask-sqlalchemy
+RUN pip install flask 
 
 # アプリケーションの起動
 # ここでは flask コマンドを使ったけど、
