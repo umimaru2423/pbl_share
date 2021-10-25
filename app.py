@@ -6,11 +6,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/")
-def redirect():
-    return redirect("/calc")
-
-@app.route("/calc", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"])
 def index():
     if request.method == "POST":
         birth_date = request.form["birth"]
@@ -20,4 +16,4 @@ def index():
         return render_template("form.html")
 
 if  __name__=='__main__':
-    app.run(debug=True, host="0,0,0,0", port=os.environ['PORT'])
+    app.run(debug=True, host="0,0,0,0", port=os.environ['port']) 
