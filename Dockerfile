@@ -5,7 +5,7 @@ FROM python:3.9-alpine
 # OS に必要なパッケージのインストール
 # git はコードをクローンするのに必要
 # g++ と musl-dev は SQLAlchemy を使った人だけ必要
-RUN apt-get update && apt-get install -y git
+RUN apk add git 
 
 # コードを落としてくる
 # HTTPS を使わないと怒られるので注意
